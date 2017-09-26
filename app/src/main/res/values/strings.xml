@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Artist2</string>
+    <array name="genre">
+        <item>Rock</item>
+        <item>RNB</item>
+        <item>Balada</item>
+    </array>
+</resources>
