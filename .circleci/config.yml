@@ -33,7 +33,7 @@ jobs:
       - run:
           name: Run Tests
           command: |
-          sudo chmod +x gradlew connectedAndroidTest
+          sudo chmod +x gradlew .gradlew connectedAndroidTest
           timeout: 120000
       - store_artifacts:
           path: app/build/reports
