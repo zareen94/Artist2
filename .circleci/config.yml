@@ -32,7 +32,8 @@ jobs:
           key: jars-{{ checksum "build.gradle" }}-{{ checksum  "app/build.gradle" }}
       - run:
           name: Run Tests
-          command: connectedAndroidTest
+          command: |
+          sudo chmod +x gradlew connectedAndroidTest
           timeout: 120000
       - store_artifacts:
           path: app/build/reports
